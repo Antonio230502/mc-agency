@@ -1,0 +1,13 @@
+.header__seccion {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.header__seccion:hover {
+    color: #e28f2f;
+}
+
+.header__seccion:active {
+    color: rgb(170, 93, 6);
+}

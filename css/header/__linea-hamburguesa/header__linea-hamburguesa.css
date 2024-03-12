@@ -1,0 +1,18 @@
+.header__linea-hamburguesa {
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    background: white;
+    transition: all 0.25s ease;
+    transform-origin: 0px 100%;
+}
+
+.header__linea-hamburguesa:nth-child(2) {
+    top: calc(50% - 2px);
+}
+
+.header__linea-hamburguesa:nth-child(3) {
+    bottom: 0;
+}

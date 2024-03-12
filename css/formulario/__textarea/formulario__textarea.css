@@ -1,0 +1,7 @@
+.formulario__textarea {
+    padding: 10px;
+    text-align: justify;
+    border: 1px solid #000;
+    border-radius: 15px;
+    resize: none;
+}

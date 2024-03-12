@@ -1,0 +1,9 @@
+.formulario__conjunto-campos {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}

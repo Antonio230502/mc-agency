@@ -1,0 +1,13 @@
+.vehiculos__boton_calculadora {
+    background-color: var(--color-botones-calcular);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.vehiculos__boton_calculadora:hover {
+    background-color: var(--color-botones-calcular-hover);
+}
+
+.vehiculos__boton_calculadora:active {
+    background-color: var(--color-botones-calcular);
+}

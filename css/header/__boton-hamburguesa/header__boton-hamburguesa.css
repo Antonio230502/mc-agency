@@ -1,0 +1,13 @@
+.header__boton-hamburguesa {
+    display: none;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+@media screen and (max-width: 440px) {
+    .header__boton-hamburguesa {
+        display: inline-block;
+    }
+}

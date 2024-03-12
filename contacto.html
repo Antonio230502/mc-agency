@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contacto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Estilos BEM -->
+    <link rel="stylesheet" href="css/header/header.css">
+    <link rel="stylesheet" href="css/header/__boton-hamburguesa/header__boton-hamburguesa.css">
+    <link rel="stylesheet" href="css/header/__linea-hamburguesa/header__linea-hamburguesa.css">
+    <link rel="stylesheet" href="css/header/__marca-automotriz/header__marca-automotriz.css">
+    <link rel="stylesheet" href="css/header/__menu-deslizable/header__menu-deslizable.css">
+    <link rel="stylesheet" href="css/header/__menu-navegacion/header__menu-navegacion.css">
+    <link rel="stylesheet" href="css/header/__opcion/header__opcion.css">
+    <link rel="stylesheet" href="css/header/__opciones/header__opciones.css">
+    <link rel="stylesheet" href="css/header/__seccion/header__seccion.css">
+    <link rel="stylesheet" href="css/header/__seccion/header__seccion_activa.css">
+    <link rel="stylesheet" href="css/header/__opcion/header__opcion_activa.css">
+    <link rel="stylesheet" href="css/formulario/formulario.css">
+    <link rel="stylesheet" href="css/formulario/__conjunto-datos/formulario__conjunto-campos.css">
+    <link rel="stylesheet" href="css/formulario/__textarea/formulario__textarea.css">
+    <link rel="stylesheet" href="css/formulario/__input/formulario__input.css">
+    <link rel="stylesheet" href="css/formulario/__instrucciones/formulario__instrucciones.css">
+    <link rel="stylesheet" href="css/footer/footer.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <nav class="header__menu-navegacion">
+            <a href="index.html" class="header__seccion">Inicio</a>
+            <a href="vehiculos.html" class="header__seccion">Vehículos</a>
+            <a href="calculadora.html" class="header__seccion">Calculadora</a>
+            <a href="contacto.html" class="header__seccion header__seccion_activa">Contacto</a>
+        </nav>
+        <div class="header__marca-automotriz">
+            <img src="img/logo.jpeg" alt="" width="50" height="50">
+            <h1>MC Agency</h1>
+        </div>
+        <div id="header__menu-hamburguesa">
+            <a href="#" class="header__boton-hamburguesa" id="menu_on">
+                <span class="header__linea-hamburguesa"></span>
+                <span class="header__linea-hamburguesa"></span>
+                <span class="header__linea-hamburguesa"></span>
+            </a>
+            <nav class="header__menu-deslizable">
+                <ul class="header__opciones">
+                    <li><a href="index.html" class="header__opcion">Inicio</a></li>
+                    <li><a href="vehiculos.html" class="header__opcion">Vehículos</a></li>
+                    <li><a href="calculadora.html" class="header__opcion">Calculadora</a></li>
+                    <li><a href="contacto.html" class="header__opcion header__opcion_activa">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <form class="formulario" id="formularioContacto">
+            <h3>Formulario de contacto</h3>
+            <span class="formulario__instrucciones">* Campos obligatorios</span>
+            <fieldset class="formulario__conjunto-campos">
+                <legend class="formulario__leyenda">Datos del cliente</legend>
+                <label for="inputNombre">*Nombre:</label>
+                <input type="text" class="formulario__input" id="inputNombre" name="inputNombre"
+
+                    pattern="[a-zA-Z ]+" required>
+                <label for="inputCorreo">*Correo:</label>
+                <input type="email" class="formulario__input" id="inputCorreo" name="inputCorreo" title="nombre@correo.com" required>
+                <label for="inputTelefono">*Teléfono:</label>
+                <input type="text" class="formulario__input" id="inputTelefono" name="inputTelefono" minlength="10"
+                    maxlength="10" pattern="[0-9]+" title="El número de teléfono debe de contener 10 digitos" required>
+            </fieldset>
+            <fieldset class="formulario__conjunto-campos">
+                <legend class="formulario__leyenda">*Comentarios</legend>
+                <textarea id="inputComentarios" name="inputComentarios" rows="15"
+                    placeholder="Escriba los detalles de su problema, queja o sugerencia, y en la mayor brevedad posible nos pondremos en contacto con usted"
+                    class="formulario__textarea" required></textarea>
+            </fieldset>
+            <input type="submit" value="Enviar" id="btnEnviar">
+        </form>
+    </main>
+    <footer class="footer">
+        MC Agency © 2024
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('xyccI56OHYGRzTVSn')
+    </script>
+    <script src="js/formulario__contacto.js"></script>
+    <script src="js/menu-hamburguesa.js"></script>
+</body>
+
+</html>

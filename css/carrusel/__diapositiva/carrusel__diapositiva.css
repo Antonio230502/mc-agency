@@ -1,0 +1,17 @@
+@keyframes animacionDesvanecimiento {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.carrusel__diapositiva {
+    flex: none;
+    width: 100%;
+    scroll-snap-align: center;
+    position: relative;
+    animation: animacionDesvanecimiento 1s ease-in-out;
+}

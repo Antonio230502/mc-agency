@@ -1,0 +1,15 @@
+.formulario {
+    display: flex;
+    max-width: 330px;
+    padding: 15px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    background:  var(--color-formularios);
+    border-radius: 15px;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px #000;
+    margin: 15px auto;
+}

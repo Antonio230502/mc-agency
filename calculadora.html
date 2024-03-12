@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vehículos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Estilos BEM -->
+    <link rel="stylesheet" href="css/header/header.css">
+    <link rel="stylesheet" href="css/header/__boton-hamburguesa/header__boton-hamburguesa.css">
+    <link rel="stylesheet" href="css/header/__linea-hamburguesa/header__linea-hamburguesa.css">
+    <link rel="stylesheet" href="css/header/__marca-automotriz/header__marca-automotriz.css">
+    <link rel="stylesheet" href="css/header/__menu-deslizable/header__menu-deslizable.css">
+    <link rel="stylesheet" href="css/header/__menu-navegacion/header__menu-navegacion.css">
+    <link rel="stylesheet" href="css/header/__opcion/header__opcion.css">
+    <link rel="stylesheet" href="css/header/__opciones/header__opciones.css">
+    <link rel="stylesheet" href="css/header/__seccion/header__seccion.css">
+    <link rel="stylesheet" href="css/header/__seccion/header__seccion_activa.css">
+    <link rel="stylesheet" href="css/header/__opcion/header__opcion_activa.css">
+    <link rel="stylesheet" href="css/formulario/formulario.css">
+    <link rel="stylesheet" href="css/formulario/__input/formulario__input.css">
+    <link rel="stylesheet" href="css/footer/footer.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <nav class="header__menu-navegacion">
+            <a href="index.html" class="header__seccion">Inicio</a>
+            <a href="vehiculos.html" class="header__seccion">Vehículos</a>
+            <a href="calculadora.html" class="header__seccion header__seccion_activa">Calculadora</a>
+            <a href="contacto.html" class="header__seccion">Contacto</a>
+        </nav>
+        <div class="header__marca-automotriz">
+            <img src="img/logo.jpeg" alt="" width="50" height="50">
+            <h1>MC Agency</h1>
+        </div>
+        <div id="header__menu-hamburguesa">
+            <a href="#" class="header__boton-hamburguesa" id="menu_on">
+                <span class="header__linea-hamburguesa"></span>
+                <span class="header__linea-hamburguesa"></span>
+                <span class="header__linea-hamburguesa"></span>
+            </a>
+            <nav class="header__menu-deslizable">
+                <ul class="header__opciones">
+                    <li><a href="index.html" class="header__opcion">Inicio</a></li>
+                    <li><a href="vehiculos.html" class="header__opcion">Vehículos</a></li>
+                    <li><a href="calculadora.html" class="header__opcion header__opcion_activa">Calculadora</a></li>
+                    <li><a href="contacto.html" class="header__opcion">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <h2 class="titulo">¿Necesitas un prestamo? Ingresa el monto del prestamo que necesitas y el tiempo en el que
+            quieres terminar de pagarlo</h2>
+        <form class="formulario">
+            <label for="inputPrestamo">Monto del prestamo</label>
+            <input type="text" class="formulario__input" id="inputPrestamo" placeholder="0.00">
+            <label for="selectPlazo">Plazo:</label>
+            <select id="selectPlazo" class="formulario__input">
+                <option value="Selecciona un plazo" selected hidden disabled>Selecciona un plazo</option>
+                <option value="6">6 meses</option>
+                <option value="12">12 meses</option>
+                <option value="18">18 meses</option>
+                <option value="24">24 meses</option>
+            </select>
+            <label for="inputTasaInteres">Tasa de interes</label>
+            <input type="text" class="formulario__input" id="inputTasaInteres" placeholder="Depende del plazo" readonly>
+            <label for="inputPagosMensuales">Pagos mensuales</label>
+            <input id="inputPagosMensuales" class="formulario__input" placeholder="0.00" readonly>
+            <label for="inputTotalPagar">Total a pagar</label>
+            <input id="inputTotalPagar" class="formulario__input" placeholder="0.00" readonly>
+        </form>
+    </main>
+    <footer class="footer">
+        MC Agency © 2024
+    </footer>
+    <script src="js/calculadora.js"></script>
+    <script src="js/menu-hamburguesa.js"></script>
+</body>
+
+</html>

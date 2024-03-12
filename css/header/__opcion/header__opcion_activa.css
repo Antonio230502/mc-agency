@@ -1,0 +1,4 @@
+.header__opcion_activa {
+    color: var(--color-seccion-activa);
+    border-bottom-color: var(--color-seccion-activa);
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MC Agency</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Estilos BEM -->
+    <link rel="stylesheet" href="css/header/header.css">
+    <link rel="stylesheet" href="css/header/__boton-hamburguesa/header__boton-hamburguesa.css">
+    <link rel="stylesheet" href="css/header/__linea-hamburguesa/header__linea-hamburguesa.css">
+    <link rel="stylesheet" href="css/header/__marca-automotriz/header__marca-automotriz.css">
+    <link rel="stylesheet" href="css/header/__menu-deslizable/header__menu-deslizable.css">
+    <link rel="stylesheet" href="css/header/__menu-navegacion/header__menu-navegacion.css">
+    <link rel="stylesheet" href="css/header/__opcion/header__opcion.css">
+    <link rel="stylesheet" href="css/header/__opciones/header__opciones.css">
+    <link rel="stylesheet" href="css/header/__seccion/header__seccion.css">
+    <link rel="stylesheet" href="css/header/__seccion/header__seccion_activa.css">
+    <link rel="stylesheet" href="css/header/__opcion/header__opcion_activa.css">
+    <link rel="stylesheet" href="css/header/__opcion/header__opcion_activa.css">
+    <link rel="stylesheet" href="css/carrusel/carrusel.css">
+    <link rel="stylesheet" href="css/carrusel/__diapositiva/carrusel__diapositiva.css">
+    <link rel="stylesheet" href="css/carrusel/__diapositiva/carrusel__diapositiva_oculta.css">
+    <link rel="stylesheet" href="css/carrusel/__imagen/carrusel__imagen.css">
+    <link rel="stylesheet" href="css/carrusel/__texto/carrusel__texto.css">
+    <link rel="stylesheet" href="css/carrusel/__boton/carrusel__boton.css">
+    <link rel="stylesheet" href="css/carrusel/__indicadores/carrusel__indicadores.css">
+    <link rel="stylesheet" href="css/carrusel/__indicador/carrusel__indicador.css">
+    <link rel="stylesheet" href="css/carrusel/__indicador/carrusel__indicador_activo.css">
+    <link rel="stylesheet" href="css/carrusel/__controles/carrusel__controles.css">
+    <link rel="stylesheet" href="css/carrusel/__contenido/carrusel__contenido.css">
+    <link rel="stylesheet" href="css/carrusel/__control/carrusel__control.css">
+    <link rel="stylesheet" href="css/carrusel/__control/carrusel__control_anterior.css">
+    <link rel="stylesheet" href="css/carrusel/__control/carrusel__control_siguiente.css">
+    <link rel="stylesheet" href="css/ofertas/ofertas.css">
+    <link rel="stylesheet" href="css/ofertas/__boton/ofertas__boton.css">
+    <link rel="stylesheet" href="css/ofertas/__descripcion/ofertas__descripcion.css">
+    <link rel="stylesheet" href="css/ofertas/__titulo/ofertas__titulo.css">
+    <link rel="stylesheet" href="css/testimonios/testimonios.css">
+    <link rel="stylesheet" href="css/testimonios/__titulo/testimonio__titulo.css">
+    <link rel="stylesheet" href="css/testimonios/__testimonio/testimonios__testimonio.css">
+    <link rel="stylesheet" href="css/footer/footer.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <nav class="header__menu-navegacion">
+            <a href="index.html" class="header__seccion header__seccion_activa">Inicio</a>
+            <a href="vehiculos.html" class="header__seccion">Vehículos</a>
+            <a href="calculadora.html" class="header__seccion">Calculadora</a>
+            <a href="contacto.html" class="header__seccion">Contacto</a>
+        </nav>
+        <div class="header__marca-automotriz">
+            <img src="img/logo.jpeg" alt="" width="50" height="50">
+            <h1>MC Agency</h1>
+        </div>
+        <div id="header__menu-hamburguesa">
+            <a href="#" class="header__boton-hamburguesa" id="menu_on">
+                <span class="header__linea-hamburguesa"></span>
+                <span class="header__linea-hamburguesa"></span>
+                <span class="header__linea-hamburguesa"></span>
+            </a>
+            <nav class="header__menu-deslizable">
+                <ul class="header__opciones">
+                    <li><a href="index.html" class="header__opcion header__opcion_activa">Inicio</a></li>
+                    <li><a href="vehiculos.html" class="header__opcion">Vehículos</a></li>
+                    <li><a href="calculadora.html" class="header__opcion">Calculadora</a></li>
+                    <li><a href="contacto.html" class="header__opcion">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <h2 class="titulo">¡Bienvenido a MC Agengy!</h2>
+        <div class="carrusel">
+            <div class="carrusel__diapositiva">
+                <img src="img/carrusel/carro1.jpg" class="carrusel__imagen">
+                <div class="carrusel__controles">
+                    <button class="carrusel__control carrusel__control_anterior"><i
+                            class="fa-solid fa-angle-left"></i></button>
+                    <div class="carrusel__contenido">
+                        <p class="carrusel__texto">Aquí encontraras vehículos de la mejor calidad</p>
+                        <button class="carrusel__boton">Ver más</button>
+                    </div>
+                    <button class="carrusel__control carrusel__control_siguiente"><i
+                            class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+            <div class="carrusel__diapositiva carrusel__diapositiva_oculta">
+                <img src="img/carrusel/carro2.jpg" class="carrusel__imagen">
+                <div class="carrusel__controles">
+                    <button class="carrusel__control carrusel__control_anterior"><i
+                            class="fa-solid fa-angle-left"></i></button>
+                    <div class="carrusel__contenido">
+                        <p class="carrusel__texto">La mejor relación calidad-precio</p>
+                        <button class="carrusel__boton">Ver más</button>
+                    </div>
+                    <button class="carrusel__control carrusel__control_siguiente"><i
+                            class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+            <div class="carrusel__diapositiva carrusel__diapositiva_oculta">
+                <img src="img/carrusel/carro3.jpg" class="carrusel__imagen">
+                <div class="carrusel__controles">
+                    <button class="carrusel__control carrusel__control_anterior"><i
+                            class="fa-solid fa-angle-left"></i></button>
+                    <div class="carrusel__contenido">
+                        <p class="carrusel__texto">Una gran variedad de vehículos</p>
+                        <button class="carrusel__boton">Ver más</button>
+                    </div>
+                    <button class="carrusel__control carrusel__control_siguiente"><i
+                            class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+            <div class="carrusel__diapositiva carrusel__diapositiva_oculta">
+                <img src="img/carrusel/carro4.jpg" class="carrusel__imagen">
+                <div class="carrusel__controles">
+                    <button class="carrusel__control carrusel__control_anterior"><i
+                            class="fa-solid fa-angle-left"></i></button>
+                    <div class="carrusel__contenido">
+                        <p class="carrusel__texto">Paga en pequeñas
+                            mensualidades</p>
+                        <button class="carrusel__boton">Ver más</button>
+                    </div>
+                    <button class="carrusel__control carrusel__control_siguiente"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+            <div class="carrusel__indicadores">
+                <span class="carrusel__indicador carrusel__indicador_activo"></span>
+                <span class="carrusel__indicador"></span>
+                <span class="carrusel__indicador"></span>
+                <span class="carrusel__indicador"></span>
+            </div>
+        </div>
+        <section class="ofertas">
+            <h3 class="ofertas__titulo">Descubre nuestras promociones</h3>
+            <p class="ofertas__descripcion">En MC Agency, siempre estamos ofreciendo promociones especiales para nuestros clientes. Mantente atento a nuestra página de ofertas o visítanos en persona para conocer nuestras últimas promociones en vehículos nuevos y usados.</p>
+            <button class="ofertas__boton">Ver ofertas</button>
+        </section>
+    
+        <section class="testimonios">
+            <h3 class="testimonios__titulo">Lo que nuestros clientes dicen</h3>
+            <div class="testimonios__testimonio">
+                <p>"Estoy muy contento con mi compra en MC Agency. El proceso fue rápido y el personal fue muy amable y servicial. Definitivamente recomendaría esta agencia a mis amigos y familiares."</p>
+                <p>- Juan Pérez</p>
+            </div>
+            <div class="testimonios__testimonio">
+                <p>"La calidad de los vehículos en MC Agency es incomparable. Encontré exactamente lo que estaba buscando a un precio muy competitivo. Sin duda volveré en el futuro."</p>
+                <p>- María González</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        MC Agency © 2024
+    </footer>
+    <script src="https://kit.fontawesome.com/5e93f3b909.js" crossorigin="anonymous"></script>
+    <script src="js/carrusel.js"></script>
+    <script src="js/menu-hamburguesa.js"></script>
+</body>
+
+</html>

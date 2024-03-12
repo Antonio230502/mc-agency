@@ -1,0 +1,16 @@
+.carrusel__boton{
+    padding: 5px;
+    background-color: var(--color-botones);
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.5s;
+    width: 30vw;
+}
+
+.carrusel__boton:hover{
+    background-color: var(--color-botones-hover);
+}
+
+.carrusel__boton:active{
+    background-color: var(--color-botones);
+}

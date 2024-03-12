@@ -1,0 +1,13 @@
+.vehiculos__boton_detalles {
+    background-color: var(--color-botones);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.vehiculos__boton_detalles:hover {
+    background-color: var(--color-botones-hover);
+}
+
+.vehiculos__boton_detalles:active {
+    background-color: var(--color-botones);
+}

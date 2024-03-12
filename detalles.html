@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vehículos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Estilos BEM -->
+    <link rel="stylesheet" href="css/header/header.css">
+    <link rel="stylesheet" href="css/header/__boton-hamburguesa/header__boton-hamburguesa.css">
+    <link rel="stylesheet" href="css/header/__linea-hamburguesa/header__linea-hamburguesa.css">
+    <link rel="stylesheet" href="css/header/__marca-automotriz/header__marca-automotriz.css">
+    <link rel="stylesheet" href="css/header/__menu-deslizable/header__menu-deslizable.css">
+    <link rel="stylesheet" href="css/header/__menu-navegacion/header__menu-navegacion.css">
+    <link rel="stylesheet" href="css/header/__opcion/header__opcion.css">
+    <link rel="stylesheet" href="css/header/__opciones/header__opciones.css">
+    <link rel="stylesheet" href="css/header/__seccion/header__seccion.css">
+    <link rel="stylesheet" href="css/header/__opcion/header__opcion_activa.css">
+    <link rel="stylesheet" href="css/detalles-vehiculo/detalles-vehiculo.css">
+    <link rel="stylesheet" href="css/detalles-vehiculo/__descripcion/detalles-vehiculo__descripcion.css">
+    <link rel="stylesheet" href="css/detalles-vehiculo/__imagen/detalles-vehiculo__imagen.css">
+    <link rel="stylesheet" href="css/detalles-vehiculo/__precio/detalles-vehiculo__precio.css">
+    <link rel="stylesheet" href="css/detalles-vehiculo/__anio/detalles-vehiculo__anio.css">
+    <link rel="stylesheet" href="css/footer/footer.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <nav class="header__menu-navegacion">
+            <a href="index.html" class="header__seccion">Inicio</a>
+            <a href="vehiculos.html" class="header__seccion">Vehículos</a>
+            <a href="calculadora.html" class="header__seccion">Calculadora</a>
+            <a href="contacto.html" class="header__seccion">Contacto</a>
+        </nav>
+        <div class="header__marca-automotriz">
+            <img src="img/logo.jpeg" alt="" width="50" height="50">
+            <h1>MC Agency</h1>
+        </div>
+        <div id="header__menu-hamburguesa">
+            <a href="#" class="header__boton-hamburguesa" id="menu_on">
+                <span class="header__linea-hamburguesa"></span>
+                <span class="header__linea-hamburguesa"></span>
+                <span class="header__linea-hamburguesa"></span>
+            </a>
+            <nav class="header__menu-deslizable">
+                <ul class="header__opciones">
+                    <li><a href="index.html" class="header__opcion">Inicio</a></li>
+                    <li><a href="vehiculos.html" class="header__opcion">Vehículos</a></li>
+                    <li><a href="calculadora.html" class="header__opcion">Calculadora</a></li>
+                    <li><a href="contacto.html" class="header__opcion">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="detalles-vehiculo">
+            <h2 class="detalles-vehiculo__titulo"></h2>
+            <img alt="" class="detalles-vehiculo__imagen">
+            <h4 class="detalles-vehiculo__anio"></h4>
+            <h4 class="detalles-vehiculo__precio"></h4>
+            <p class="detalles-vehiculo__descripcion"></p>
+        </div>
+    </main>
+    <footer class="footer">
+        MC Agency © 2024
+    </footer>
+    <script src="https://kit.fontawesome.com/5e93f3b909.js" crossorigin="anonymous"></script>
+    <script src="js/detalles-vehiculo.js"></script>
+    <script src="js/menu-hamburguesa.js"></script>
+</body>
+
+</html>

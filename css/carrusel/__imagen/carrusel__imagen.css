@@ -1,0 +1,6 @@
+.carrusel__imagen {
+    width: 100%; /* Esto hará que la imagen siempre tenga el ancho total de su contenedor */
+    max-height: 477px;
+    height: 40vw;
+    object-fit: cover; /* Esto asegura que la imagen cubra todo el espacio disponible sin distorsionarse */
+}

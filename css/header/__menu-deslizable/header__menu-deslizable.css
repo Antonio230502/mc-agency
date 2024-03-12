@@ -1,0 +1,15 @@
+.header__menu-deslizable {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -350px;
+    /* Escondemos nuestro menú con un valor negativo */
+    width: 300px;
+    z-index: 1;
+    padding: 90px 30px 30px;
+    background: #333;
+    opacity: 0;
+    transition: all 0.75s ease;
+    font-size: 1.2em;
+    overflow-y: auto;
+}

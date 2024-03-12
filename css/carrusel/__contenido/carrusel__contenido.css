@@ -1,0 +1,14 @@
+.carrusel__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 70%;
+    width: 70%;
+    max-height: 477px;
+    height: 20vw;
+    border-radius: 30px;
+}

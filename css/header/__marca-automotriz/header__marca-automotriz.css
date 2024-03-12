@@ -1,0 +1,7 @@
+.header__marca-automotriz {
+    display: flex;
+    color: white;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}

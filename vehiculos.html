@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vehículos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Estilos BEM -->
+    <link rel="stylesheet" href="css/header/header.css">
+    <link rel="stylesheet" href="css/header/__boton-hamburguesa/header__boton-hamburguesa.css">
+    <link rel="stylesheet" href="css/header/__linea-hamburguesa/header__linea-hamburguesa.css">
+    <link rel="stylesheet" href="css/header/__marca-automotriz/header__marca-automotriz.css">
+    <link rel="stylesheet" href="css/header/__menu-deslizable/header__menu-deslizable.css">
+    <link rel="stylesheet" href="css/header/__menu-navegacion/header__menu-navegacion.css">
+    <link rel="stylesheet" href="css/header/__opcion/header__opcion.css">
+    <link rel="stylesheet" href="css/header/__opciones/header__opciones.css">
+    <link rel="stylesheet" href="css/header/__seccion/header__seccion.css">
+    <link rel="stylesheet" href="css/header/__seccion/header__seccion_activa.css">
+    <link rel="stylesheet" href="css/header/__opcion/header__opcion_activa.css">
+    <link rel="stylesheet" href="css/vehiculos/vehiculos.css">
+    <link rel="stylesheet" href="css/vehiculos/__boton/vehiculos__boton.css">
+    <link rel="stylesheet" href="css/vehiculos/__boton/vehiculos__boton_calcular.css">
+    <link rel="stylesheet" href="css/vehiculos/__boton/vehiculos__boton_detalles.css">
+    <link rel="stylesheet" href="css/vehiculos/__imagen/vehiculos__imagen.css">
+    <link rel="stylesheet" href="css/vehiculos/__modelo/vehiculos__modelo.css">
+    <link rel="stylesheet" href="css/vehiculos/__anio/vehiculos__anio.css">
+    <link rel="stylesheet" href="css/vehiculos/__marca/vehiculos__marca.css">
+    <link rel="stylesheet" href="css/vehiculos/__precio/vehiculos__precio.css">
+    <link rel="stylesheet" href="css/vehiculos/__vehiculo/vehiculos__vehiculo.css">
+    <link rel="stylesheet" href="css/vehiculos/__vehiculo/vehiculos__vehiculo_oculto.css">
+    <link rel="stylesheet" href="css/formulario/formulario.css">
+    <link rel="stylesheet" href="css/formulario/__input/formulario__input.css">
+    <link rel="stylesheet" href="css/footer/footer.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <nav class="header__menu-navegacion">
+            <a href="index.html" class="header__seccion">Inicio</a>
+            <a href="vehiculos.html" class="header__seccion header__seccion_activa">Vehículos</a>
+            <a href="calculadora.html" class="header__seccion">Calculadora</a>
+            <a href="contacto.html" class="header__seccion">Contacto</a>
+        </nav>
+        <div class="header__marca-automotriz">
+            <img src="img/logo.jpeg" alt="" width="50" height="50">
+            <h1>MC Agency</h1>
+        </div>
+        <div id="header__menu-hamburguesa">
+            <a href="#" class="header__boton-hamburguesa" id="menu_on">
+                <span class="header__linea-hamburguesa"></span>
+                <span class="header__linea-hamburguesa"></span>
+                <span class="header__linea-hamburguesa"></span>
+            </a>
+            <nav class="header__menu-deslizable">
+                <ul class="header__opciones">
+                    <li><a href="index.html" class="header__opcion">Inicio</a></li>
+                    <li><a href="vehiculos.html" class="header__opcion header__opcion_activa">Vehículos</a></li>
+                    <li><a href="calculadora.html" class="header__opcion">Calculadora</a></li>
+                    <li><a href="contacto.html" class="header__opcion">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <h2 class="titulo">Echa un vistazo a nuestro catalogo de vehículos</h2>
+        <form class="formulario">
+            <label for="inputBusqueda">Buscar vehículo: </label>
+            <input type="text" class="formulario__input" id="inputBusqueda" placeholder="Por marca, modelo o año">
+        </form>
+
+        <div class="vehiculos">
+            <div class="vehiculos__vehiculo">
+                <img src="img/vehiculos/carro1.png" alt="" class="vehiculos__imagen">
+                <h3 class="vehiculos__modelo">Z</h3>
+                <h4 class="vehiculos__marca">Nissan</h4>
+                <h5 class="vehiculos__anio">2023</h5>
+                <h5 class="vehiculos__precio">$500,000</h5>
+                <div class="vehiculos__botones">
+                    <button class="vehiculos__boton vehiculos__boton_detalles" data-vehiculo="1">Ver detalles</button>
+                    <button class="vehiculos__boton vehiculos__boton_calculadora" data-vehiculo="1">Calcular prestamo</button>
+                </div>
+            </div>
+            <div class="vehiculos__vehiculo">
+                <img src="img/vehiculos/carro2.png" alt="" class="vehiculos__imagen">
+                <h3 class="vehiculos__modelo">Altima</h3>
+                <h4 class="vehiculos__marca">Nissan</h4>
+                <h5 class="vehiculos__anio">2023</h5>
+                <h5 class="vehiculos__precio">$600,000</h5>
+                <div class="vehiculos__botones">
+                    <button class="vehiculos__boton vehiculos__boton_detalles" data-vehiculo="2">Ver detalles</button>
+                    <button class="vehiculos__boton vehiculos__boton_calculadora" data-vehiculo="2">Calcular prestamo</button>
+                </div>
+            </div>
+            <div class="vehiculos__vehiculo">
+                <img src="img/vehiculos/carro3.png" alt="" class="vehiculos__imagen">
+                <h3 class="vehiculos__modelo">Pathfinder</h3>
+                <h4 class="vehiculos__marca">Nissan</h4>
+                <h5 class="vehiculos__anio">2024</h5>
+                <h5 class="vehiculos__precio">$700,000</h5>
+                <div class="vehiculos__botones">
+                    <button class="vehiculos__boton vehiculos__boton_detalles" data-vehiculo="3">Ver detalles</button>
+                    <button class="vehiculos__boton vehiculos__boton_calculadora" data-vehiculo="3">Calcular prestamo</button>
+                </div>
+            </div>
+            <div class="vehiculos__vehiculo">
+                <img src="img/vehiculos/carro4.png" alt="" class="vehiculos__imagen">
+                <h3 class="vehiculos__modelo">X-Trail</h3>
+                <h4 class="vehiculos__marca">Nissan</h4>
+                <h5 class="vehiculos__anio">2024</h5>
+                <h5 class="vehiculos__precio">$650,000</h5>
+                <div class="vehiculos__botones">
+                    <button class="vehiculos__boton vehiculos__boton_detalles" data-vehiculo="4">Ver detalles</button>
+                    <button class="vehiculos__boton vehiculos__boton_calculadora" data-vehiculo="4">Calcular prestamo</button>
+                </div>
+            </div>
+            <div class="vehiculos__vehiculo">
+                <img src="img/vehiculos/carro5.png" alt="" class="vehiculos__imagen">
+                <h3 class="vehiculos__modelo">Sentra</h3>
+                <h4 class="vehiculos__marca">Nissan</h4>
+                <h5 class="vehiculos__anio">2024</h5>
+                <h5 class="vehiculos__precio">$750,000</h5>
+                <div class="vehiculos__botones">
+                    <button class="vehiculos__boton vehiculos__boton_detalles" data-vehiculo="5">Ver detalles</button>
+                    <button class="vehiculos__boton vehiculos__boton_calculadora" data-vehiculo="5">Calcular prestamo</button>
+                </div>
+            </div>
+            <div class="vehiculos__vehiculo">
+                <img src="img/vehiculos/carro6.webp" alt="" class="vehiculos__imagen">
+                <h3 class="vehiculos__modelo">Virtus</h3>
+                <h4 class="vehiculos__marca">Volkswagen</h4>
+                <h5 class="vehiculos__anio">2024</h5>
+                <h5 class="vehiculos__precio">$326,470</h5>
+                <div class="vehiculos__botones">
+                    <button class="vehiculos__boton vehiculos__boton_detalles" data-vehiculo="6">Ver detalles</button>
+                    <button class="vehiculos__boton vehiculos__boton_calculadora" data-vehiculo="6">Calcular prestamo</button>
+                </div>
+            </div>
+            <div class="vehiculos__vehiculo">
+                <img src="img/vehiculos/carro7.webp" alt="" class="vehiculos__imagen">
+                <h3 class="vehiculos__modelo">Tiguan</h3>
+                <h4 class="vehiculos__marca">Volkswagen</h4>
+                <h5 class="vehiculos__anio">2024</h5>
+                <h5 class="vehiculos__precio">$577,070</h5>
+                <div class="vehiculos__botones">
+                    <button class="vehiculos__boton vehiculos__boton_detalles" data-vehiculo="7">Ver detalles</button>
+                    <button class="vehiculos__boton vehiculos__boton_calculadora" data-vehiculo="7">Calcular prestamo</button>
+                </div>
+            </div>
+            <div class="vehiculos__vehiculo">
+                <img src="img/vehiculos/carro8.webp" alt="" class="vehiculos__imagen">
+                <h3 class="vehiculos__modelo">Taos</h3>
+                <h4 class="vehiculos__marca">Volkswagen</h4>
+                <h5 class="vehiculos__anio">2024</h5>
+                <h5 class="vehiculos__precio">$590,070</h5>
+                <div class="vehiculos__botones">
+                    <button class="vehiculos__boton vehiculos__boton_detalles" data-vehiculo="8">Ver detalles</button>
+                    <button class="vehiculos__boton vehiculos__boton_calculadora" data-vehiculo="8">Calcular prestamo</button>
+                </div>
+            </div>
+            <div class="vehiculos__vehiculo">
+                <img src="img/vehiculos/carro9.webp" alt="" class="vehiculos__imagen">
+                <h3 class="vehiculos__modelo">Polo</h3>
+                <h4 class="vehiculos__marca">Volkswagen</h4>
+                <h5 class="vehiculos__anio">2024</h5>
+                <h5 class="vehiculos__precio">$374,970</h5>
+                <div class="vehiculos__botones">
+                    <button class="vehiculos__boton vehiculos__boton_detalles" data-vehiculo="9">Ver detalles</button>
+                    <button class="vehiculos__boton vehiculos__boton_calculadora" data-vehiculo="9">Calcular prestamo</button>
+                </div>
+            </div>
+            <div class="vehiculos__vehiculo">
+                <img src="img/vehiculos/carro10.png" alt="" class="vehiculos__imagen">
+                <h3 class="vehiculos__modelo">Prius</h3>
+                <h4 class="vehiculos__marca">Toyota</h4>
+                <h5 class="vehiculos__anio">2020</h5>
+                <h5 class="vehiculos__precio">$484,900</h5>
+                <div class="vehiculos__botones">
+                    <button class="vehiculos__boton vehiculos__boton_detalles" data-vehiculo="10">Ver detalles</button>
+                    <button class="vehiculos__boton vehiculos__boton_calculadora" data-vehiculo="10">Calcular prestamo</button>
+                </div>
+            </div>
+            <div class="vehiculos__vehiculo">
+                <img src="img/vehiculos/carro11.png" alt="" class="vehiculos__imagen">
+                <h3 class="vehiculos__modelo">RAV4 HEV</h3>
+                <h4 class="vehiculos__marca">Toyota</h4>
+                <h5 class="vehiculos__anio">2021</h5>
+                <h5 class="vehiculos__precio">$797,400</h5>
+                <div class="vehiculos__botones">
+                    <button class="vehiculos__boton vehiculos__boton_detalles" data-vehiculo="11">Ver detalles</button>
+                    <button class="vehiculos__boton vehiculos__boton_calculadora" data-vehiculo="11">Calcular prestamo</button>
+                </div>
+            </div>
+            <div class="vehiculos__vehiculo">
+                <img src="img/vehiculos/carro12.png" alt="" class="vehiculos__imagen">
+                <h3 class="vehiculos__modelo">Tundra HEV</h3>
+                <h4 class="vehiculos__marca">Toyota</h4>
+                <h5 class="vehiculos__anio">2021</h5>
+                <h5 class="vehiculos__precio">$1,422,300</h5>
+                <div class="vehiculos__botones">
+                    <button class="vehiculos__boton vehiculos__boton_detalles" data-vehiculo="12">Ver detalles</button>
+                    <button class="vehiculos__boton vehiculos__boton_calculadora" data-vehiculo="12">Calcular prestamo</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        MC Agency © 2024
+    </footer>
+    <script src="https://kit.fontawesome.com/5e93f3b909.js" crossorigin="anonymous"></script>
+    <script src="js/vehiculos__boton.js"></script>
+    <script src="js/formulario__input.js"></script>
+    <script src="js/menu-hamburguesa.js"></script>
+</body>
+
+</html>

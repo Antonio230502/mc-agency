@@ -1,0 +1,12 @@
+.carrusel__controles {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute; /* Esto posiciona el elemento de forma absoluta en relación a su contenedor más cercano con position: relative */
+    top: 50%; /* Esto posiciona el elemento en el centro verticalmente */
+    left: 50%; /* Esto posiciona el elemento en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Esto ajusta la posición del elemento para que esté perfectamente centrado */
+    max-height: 477px;
+    height: 20vw;
+}

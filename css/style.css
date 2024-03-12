@@ -1,0 +1,45 @@
+/* definiendo las variables de color */
+:root {
+    --color-formularios: rgba(214, 203, 203, 0.8);
+    --color-botones: rgb(228, 167, 167);
+    --color-botones-hover: rgb(156, 112, 112);
+    --color-botones-calcular: rgb(120, 236, 145);
+    --color-botones-calcular-hover: rgb(77, 151, 93);
+    --color-header-footer: #333;
+    --color-seccion-activa: #e28f2f;
+}
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.titulo {
+    text-align: center;
+    padding: 10px;
+}
+
+/*Cambiar el ícono de la hamgurguesa por un tache*/
+
+.menu_visible .header__linea-hamburguesa:nth-child(1) {
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.menu_visible .header__linea-hamburguesa:nth-child(2) {
+    opacity: 0;
+}
+
+.menu_visible .header__linea-hamburguesa:nth-child(3) {
+    transform: rotate(-45deg) translate(-3px, 3px);
+}
+
+/*Animación del menú deslizable*/
+
+.menu_visible .header__menu-deslizable {
+    right: 0;
+    opacity: 1;
+}
